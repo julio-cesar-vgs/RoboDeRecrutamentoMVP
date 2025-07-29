@@ -1,0 +1,44 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.14.36221.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RecrutamentoRobo.Core", "RecrutamentoRobo.Core\RecrutamentoRobo.Core.csproj", "{1760CAF5-4A1A-4B1E-988D-27EAD1883400}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RecrutamentoRobo.Infrastructure", "RecrutamentoRobo.Infrastructure\RecrutamentoRobo.Infrastructure.csproj", "{2516DD6F-D29B-4BA1-B04E-D977F6FFF9D0}"
+	ProjectSection(ProjectDependencies) = postProject
+		{1760CAF5-4A1A-4B1E-988D-27EAD1883400} = {1760CAF5-4A1A-4B1E-988D-27EAD1883400}
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RecrutamentoRobo.Worker", "RecrutamentoRobo.Worker\RecrutamentoRobo.Worker.csproj", "{FD31736D-D378-4D4C-9EED-94CCC727086C}"
+	ProjectSection(ProjectDependencies) = postProject
+		{1760CAF5-4A1A-4B1E-988D-27EAD1883400} = {1760CAF5-4A1A-4B1E-988D-27EAD1883400}
+		{2516DD6F-D29B-4BA1-B04E-D977F6FFF9D0} = {2516DD6F-D29B-4BA1-B04E-D977F6FFF9D0}
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{1760CAF5-4A1A-4B1E-988D-27EAD1883400}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1760CAF5-4A1A-4B1E-988D-27EAD1883400}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1760CAF5-4A1A-4B1E-988D-27EAD1883400}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1760CAF5-4A1A-4B1E-988D-27EAD1883400}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2516DD6F-D29B-4BA1-B04E-D977F6FFF9D0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2516DD6F-D29B-4BA1-B04E-D977F6FFF9D0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2516DD6F-D29B-4BA1-B04E-D977F6FFF9D0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2516DD6F-D29B-4BA1-B04E-D977F6FFF9D0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FD31736D-D378-4D4C-9EED-94CCC727086C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FD31736D-D378-4D4C-9EED-94CCC727086C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FD31736D-D378-4D4C-9EED-94CCC727086C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FD31736D-D378-4D4C-9EED-94CCC727086C}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {52543CD0-3915-4003-80A1-4BD70D3F9413}
+	EndGlobalSection
+EndGlobal
