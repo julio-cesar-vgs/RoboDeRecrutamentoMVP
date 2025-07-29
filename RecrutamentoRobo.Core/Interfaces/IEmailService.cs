@@ -15,4 +15,6 @@ public interface IEmailService
 
     // Tarefa para marcar um e-mail como lido
     Task MarkEmailAsReadAsync(string messageId);
+
+    Task MoveEmailAsync(string messageId, string destinationFolderName);
 }

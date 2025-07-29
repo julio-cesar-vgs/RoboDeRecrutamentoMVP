@@ -1,26 +1,36 @@
-﻿        // Program.cs
-        using Microsoft.Extensions.DependencyInjection;
-        using Microsoft.Extensions.Hosting;
-        using RecrutamentoRobo.Core.Interfaces;
-        using RecrutamentoRobo.Infrastructure.Services;
+﻿// Program.cs
 
-        namespace RecrutamentoRobo.ConsoleApp // É uma boa prática usar um namespace
-        {
-            class Program
+using Azure.Identity;
+using Microsoft.Graph;
+using RecrutamentoRobo.Core.Interfaces;
+using RecrutamentoRobo.Infrastructure.Services;
+
+namespace RecrutamentoRobo.Worker; // É uma boa prática usar um namespace
+
+internal class Program
+{
+    private static void Main(string[] args)
+    {
+        Console.WriteLine("Olá, mundo! Esta é a forma tradicional.");
+
+        var host = Host.CreateDefaultBuilder(args)
+            .ConfigureServices((hostContext, services) =>
             {
-                static void Main(string[] args)
+                services.AddSingleton<IEmailService, GraphEmailService>();
+                services.AddSingleton<GraphServiceClient>(provider =>
                 {
-                    Console.WriteLine("Olá, mundo! Esta é a forma tradicional.");
+                    var configuration = provider.GetRequiredService<IConfiguration>();
+                    var clientSecretCredential = new ClientSecretCredential(
+                        configuration["AzureAd:TenantId"],
+                        configuration["AzureAd:ClientId"],
+                        configuration["AzureAd:ClientSecret"]
+                    );
+                    return new GraphServiceClient(clientSecretCredential);
+                });
+                services.AddHostedService<Worker>();
+            })
+            .Build();
 
-                    IHost host = Host.CreateDefaultBuilder(args)
-                        .ConfigureServices((hostContext, services) =>
-                        {
-                            services.AddSingleton<IEmailService, GraphEmailService>();
-                            services.AddHostedService<Worker.Worker>();
-                        })
-                        .Build();
-
-                    host.Run();
-                }
-            }
-        }
+        host.Run();
+    }
+}

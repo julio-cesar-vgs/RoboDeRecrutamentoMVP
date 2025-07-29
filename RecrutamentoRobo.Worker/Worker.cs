@@ -1,21 +1,27 @@
-﻿using Microsoft.Extensions.Configuration;
-using Microsoft.Extensions.Hosting;
-using Microsoft.Extensions.Logging;
+﻿// Worker.cs FINAL E COMPLETO
+
 using RecrutamentoRobo.Core.Interfaces;
 
 namespace RecrutamentoRobo.Worker;
 
 public class Worker : BackgroundService
 {
-    private readonly ILogger<Worker> _logger;
+    private readonly string _downloadPath;
     private readonly IEmailService _emailService;
-    private readonly IConfiguration _configuration;
+    private readonly List<string> _keywords;
+    private readonly ILogger<Worker> _logger;
 
     public Worker(ILogger<Worker> logger, IEmailService emailService, IConfiguration configuration)
     {
         _logger = logger;
         _emailService = emailService;
-        _configuration = configuration;
+
+        // Carrega as configurações importantes uma única vez
+        _downloadPath = configuration["EmailMonitor:DownloadPath"];
+        _keywords = configuration.GetSection("MatchingCriteria:Keywords").Get<List<string>>() ?? new List<string>();
+
+        if (_keywords.Count == 0)
+            _logger.LogWarning("Nenhuma palavra-chave de match foi configurada no appsettings.json.");
     }
 
     protected override async Task ExecuteAsync(CancellationToken stoppingToken)
@@ -24,33 +30,59 @@ public class Worker : BackgroundService
 
         while (!stoppingToken.IsCancellationRequested)
         {
-            _logger.LogInformation("Iniciando ciclo de verificação de e-mails.");
-
-            var emails = await _emailService.GetUnreadEmailsAsync();
-
-            if (emails.Any())
+            try
             {
-                _logger.LogInformation("Processando {count} novos e-mails.", emails.Count());
+                _logger.LogInformation("--- Iniciando ciclo de verificação de e-mails ---");
+                var emails = await _emailService.GetUnreadEmailsAsync();
 
                 foreach (var email in emails)
                 {
-                    _logger.LogInformation("--- E-mail encontrado: {subject} ---", email.Subject);
+                    _logger.LogInformation("Processando e-mail: '{subject}'", email.Subject);
 
-                    // Por enquanto, vamos apenas testar a extração de texto do primeiro anexo
-                    // A lógica de match com as palavras-chave virá na próxima etapa.
+                    foreach (var attachment in email.Attachments)
+                    {
+                        if (!attachment.Name.EndsWith(".pdf", StringComparison.OrdinalIgnoreCase) &&
+                            !attachment.Name.EndsWith(".docx", StringComparison.OrdinalIgnoreCase))
+                            continue; // Pula anexos que não são documentos
 
-                    // Esta chamada ainda não está implementada no GetUnreadEmailsAsync,
-                    // vamos precisar ajustar para pegar os anexos.
+                        var textoDoAnexo = await _emailService.GetAttachmentTextAsync(email.Id, attachment.Id);
 
-                    // --- LÓGICA DE MATCH E DOWNLOAD ENTRARÁ AQUI ---
+                        if (string.IsNullOrWhiteSpace(textoDoAnexo)) continue; // Pula se não conseguiu ler o texto
+
+                        // LÓGICA DE MATCH
+                        var lowerCaseText = textoDoAnexo.ToLowerInvariant();
+                        var matchFound = false;
+                        foreach (var keyword in _keywords)
+                            if (lowerCaseText.Contains(keyword.ToLowerInvariant()))
+                            {
+                                _logger.LogInformation(
+                                    "MATCH ENCONTRADO! Palavra-chave: '{keyword}' no anexo '{attachmentName}'.",
+                                    keyword, attachment.Name);
+
+                                // AÇÃO DE DOWNLOAD
+                                var finalDownloadPath = Path.Combine(_downloadPath, attachment.Name);
+                                await _emailService.DownloadAttachmentAsync(email.Id, attachment.Id, finalDownloadPath);
+                                matchFound = true;
+                                break; // Para de procurar keywords, pois já encontrou uma
+                            }
+
+                        if (matchFound) break; // Para de olhar outros anexos, pois este e-mail já deu match
+                    }
+
+                    // AÇÃO PÓS-PROCESSAMENTO (ESSENCIAL)
+                    _logger.LogInformation(
+                        "Finalizado processamento do e-mail '{subject}'. Movendo para a pasta 'Processados'.",
+                        email.Subject);
+                    await _emailService.MoveEmailAsync(email.Id, "Processados");
                 }
+
+                _logger.LogInformation("--- Ciclo finalizado. Aguardando 5 minutos para o próximo. ---");
             }
-            else
+            catch (Exception ex)
             {
-                _logger.LogInformation("Nenhum e-mail novo encontrado.");
+                _logger.LogError(ex, "Ocorreu um erro inesperado no ciclo principal do robô.");
             }
 
-            _logger.LogInformation("Ciclo finalizado. Aguardando 5 minutos para o próximo.");
             await Task.Delay(TimeSpan.FromMinutes(5), stoppingToken);
         }
     }

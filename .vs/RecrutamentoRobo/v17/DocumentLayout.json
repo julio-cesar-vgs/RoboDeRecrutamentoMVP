@@ -1,0 +1,190 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\Projetos\\RoboDeRecrutamentoMVP\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{FD31736D-D378-4D4C-9EED-94CCC727086C}|RecrutamentoRobo.Worker\\RecrutamentoRobo.Worker.csproj|d:\\projetos\\roboderecrutamentomvp\\recrutamentorobo.worker\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FD31736D-D378-4D4C-9EED-94CCC727086C}|RecrutamentoRobo.Worker\\RecrutamentoRobo.Worker.csproj|solutionrelative:recrutamentorobo.worker\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FD31736D-D378-4D4C-9EED-94CCC727086C}|RecrutamentoRobo.Worker\\RecrutamentoRobo.Worker.csproj|d:\\projetos\\roboderecrutamentomvp\\recrutamentorobo.worker\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{FD31736D-D378-4D4C-9EED-94CCC727086C}|RecrutamentoRobo.Worker\\RecrutamentoRobo.Worker.csproj|solutionrelative:recrutamentorobo.worker\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2516DD6F-D29B-4BA1-B04E-D977F6FFF9D0}|RecrutamentoRobo.Infrastructure\\RecrutamentoRobo.Infrastructure.csproj|d:\\projetos\\roboderecrutamentomvp\\recrutamentorobo.infrastructure\\services\\graphemailservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2516DD6F-D29B-4BA1-B04E-D977F6FFF9D0}|RecrutamentoRobo.Infrastructure\\RecrutamentoRobo.Infrastructure.csproj|solutionrelative:recrutamentorobo.infrastructure\\services\\graphemailservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2516DD6F-D29B-4BA1-B04E-D977F6FFF9D0}|RecrutamentoRobo.Infrastructure\\RecrutamentoRobo.Infrastructure.csproj|d:\\projetos\\roboderecrutamentomvp\\recrutamentorobo.infrastructure\\configuration\\emailmonitoroptions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2516DD6F-D29B-4BA1-B04E-D977F6FFF9D0}|RecrutamentoRobo.Infrastructure\\RecrutamentoRobo.Infrastructure.csproj|solutionrelative:recrutamentorobo.infrastructure\\configuration\\emailmonitoroptions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FD31736D-D378-4D4C-9EED-94CCC727086C}|RecrutamentoRobo.Worker\\RecrutamentoRobo.Worker.csproj|d:\\projetos\\roboderecrutamentomvp\\recrutamentorobo.worker\\recrutamentorobo.worker.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{FD31736D-D378-4D4C-9EED-94CCC727086C}|RecrutamentoRobo.Worker\\RecrutamentoRobo.Worker.csproj|solutionrelative:recrutamentorobo.worker\\recrutamentorobo.worker.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1760CAF5-4A1A-4B1E-988D-27EAD1883400}|RecrutamentoRobo.Core\\RecrutamentoRobo.Core.csproj|d:\\projetos\\roboderecrutamentomvp\\recrutamentorobo.core\\recrutamentorobo.core.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{1760CAF5-4A1A-4B1E-988D-27EAD1883400}|RecrutamentoRobo.Core\\RecrutamentoRobo.Core.csproj|solutionrelative:recrutamentorobo.core\\recrutamentorobo.core.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2516DD6F-D29B-4BA1-B04E-D977F6FFF9D0}|RecrutamentoRobo.Infrastructure\\RecrutamentoRobo.Infrastructure.csproj|d:\\projetos\\roboderecrutamentomvp\\recrutamentorobo.infrastructure\\recrutamentorobo.infrastructure.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{2516DD6F-D29B-4BA1-B04E-D977F6FFF9D0}|RecrutamentoRobo.Infrastructure\\RecrutamentoRobo.Infrastructure.csproj|solutionrelative:recrutamentorobo.infrastructure\\recrutamentorobo.infrastructure.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FD31736D-D378-4D4C-9EED-94CCC727086C}|RecrutamentoRobo.Worker\\RecrutamentoRobo.Worker.csproj|d:\\projetos\\roboderecrutamentomvp\\recrutamentorobo.worker\\worker.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FD31736D-D378-4D4C-9EED-94CCC727086C}|RecrutamentoRobo.Worker\\RecrutamentoRobo.Worker.csproj|solutionrelative:recrutamentorobo.worker\\worker.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1760CAF5-4A1A-4B1E-988D-27EAD1883400}|RecrutamentoRobo.Core\\RecrutamentoRobo.Core.csproj|d:\\projetos\\roboderecrutamentomvp\\recrutamentorobo.core\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1760CAF5-4A1A-4B1E-988D-27EAD1883400}|RecrutamentoRobo.Core\\RecrutamentoRobo.Core.csproj|solutionrelative:recrutamentorobo.core\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1760CAF5-4A1A-4B1E-988D-27EAD1883400}|RecrutamentoRobo.Core\\RecrutamentoRobo.Core.csproj|d:\\projetos\\roboderecrutamentomvp\\recrutamentorobo.core\\interfaces\\iemailservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1760CAF5-4A1A-4B1E-988D-27EAD1883400}|RecrutamentoRobo.Core\\RecrutamentoRobo.Core.csproj|solutionrelative:recrutamentorobo.core\\interfaces\\iemailservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 5,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "RecrutamentoRobo.Core",
+              "DocumentMoniker": "D:\\Projetos\\RoboDeRecrutamentoMVP\\RecrutamentoRobo.Core\\RecrutamentoRobo.Core.csproj",
+              "RelativeDocumentMoniker": "RecrutamentoRobo.Core\\RecrutamentoRobo.Core.csproj",
+              "ToolTip": "D:\\Projetos\\RoboDeRecrutamentoMVP\\RecrutamentoRobo.Core\\RecrutamentoRobo.Core.csproj",
+              "RelativeToolTip": "RecrutamentoRobo.Core\\RecrutamentoRobo.Core.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAKAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-07-29T05:29:49.997Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "RecrutamentoRobo.Infrastructure",
+              "DocumentMoniker": "D:\\Projetos\\RoboDeRecrutamentoMVP\\RecrutamentoRobo.Infrastructure\\RecrutamentoRobo.Infrastructure.csproj",
+              "RelativeDocumentMoniker": "RecrutamentoRobo.Infrastructure\\RecrutamentoRobo.Infrastructure.csproj",
+              "ToolTip": "D:\\Projetos\\RoboDeRecrutamentoMVP\\RecrutamentoRobo.Infrastructure\\RecrutamentoRobo.Infrastructure.csproj",
+              "RelativeToolTip": "RecrutamentoRobo.Infrastructure\\RecrutamentoRobo.Infrastructure.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAAKAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-07-29T05:24:30.083Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\Projetos\\RoboDeRecrutamentoMVP\\RecrutamentoRobo.Core\\Program.cs",
+              "RelativeDocumentMoniker": "RecrutamentoRobo.Core\\Program.cs",
+              "ToolTip": "D:\\Projetos\\RoboDeRecrutamentoMVP\\RecrutamentoRobo.Core\\Program.cs",
+              "RelativeToolTip": "RecrutamentoRobo.Core\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAPAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-29T05:23:22.36Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "IEmailService.cs",
+              "DocumentMoniker": "D:\\Projetos\\RoboDeRecrutamentoMVP\\RecrutamentoRobo.Core\\Interfaces\\IEmailService.cs",
+              "RelativeDocumentMoniker": "RecrutamentoRobo.Core\\Interfaces\\IEmailService.cs",
+              "ToolTip": "D:\\Projetos\\RoboDeRecrutamentoMVP\\RecrutamentoRobo.Core\\Interfaces\\IEmailService.cs",
+              "RelativeToolTip": "RecrutamentoRobo.Core\\Interfaces\\IEmailService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAARAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-29T05:15:51.611Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "GraphEmailService.cs",
+              "DocumentMoniker": "D:\\Projetos\\RoboDeRecrutamentoMVP\\RecrutamentoRobo.Infrastructure\\Services\\GraphEmailService.cs",
+              "RelativeDocumentMoniker": "RecrutamentoRobo.Infrastructure\\Services\\GraphEmailService.cs",
+              "ToolTip": "D:\\Projetos\\RoboDeRecrutamentoMVP\\RecrutamentoRobo.Infrastructure\\Services\\GraphEmailService.cs",
+              "RelativeToolTip": "RecrutamentoRobo.Infrastructure\\Services\\GraphEmailService.cs",
+              "ViewState": "AgIAADcAAAAAAAAAAAAwwFMAAABbAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-29T05:10:46.564Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\Projetos\\RoboDeRecrutamentoMVP\\RecrutamentoRobo.Worker\\Program.cs",
+              "RelativeDocumentMoniker": "RecrutamentoRobo.Worker\\Program.cs",
+              "ToolTip": "D:\\Projetos\\RoboDeRecrutamentoMVP\\RecrutamentoRobo.Worker\\Program.cs",
+              "RelativeToolTip": "RecrutamentoRobo.Worker\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAGAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-29T04:57:00.638Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "D:\\Projetos\\RoboDeRecrutamentoMVP\\RecrutamentoRobo.Worker\\appsettings.json",
+              "RelativeDocumentMoniker": "RecrutamentoRobo.Worker\\appsettings.json",
+              "ToolTip": "D:\\Projetos\\RoboDeRecrutamentoMVP\\RecrutamentoRobo.Worker\\appsettings.json",
+              "RelativeToolTip": "RecrutamentoRobo.Worker\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-07-29T05:09:59.337Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "RecrutamentoRobo.Worker",
+              "DocumentMoniker": "D:\\Projetos\\RoboDeRecrutamentoMVP\\RecrutamentoRobo.Worker\\RecrutamentoRobo.Worker.csproj",
+              "RelativeDocumentMoniker": "RecrutamentoRobo.Worker\\RecrutamentoRobo.Worker.csproj",
+              "ToolTip": "D:\\Projetos\\RoboDeRecrutamentoMVP\\RecrutamentoRobo.Worker\\RecrutamentoRobo.Worker.csproj",
+              "RelativeToolTip": "RecrutamentoRobo.Worker\\RecrutamentoRobo.Worker.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAKAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-07-29T05:29:54.115Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "EmailMonitorOptions.cs",
+              "DocumentMoniker": "D:\\Projetos\\RoboDeRecrutamentoMVP\\RecrutamentoRobo.Infrastructure\\Configuration\\EmailMonitorOptions.cs",
+              "RelativeDocumentMoniker": "RecrutamentoRobo.Infrastructure\\Configuration\\EmailMonitorOptions.cs",
+              "ToolTip": "D:\\Projetos\\RoboDeRecrutamentoMVP\\RecrutamentoRobo.Infrastructure\\Configuration\\EmailMonitorOptions.cs",
+              "RelativeToolTip": "RecrutamentoRobo.Infrastructure\\Configuration\\EmailMonitorOptions.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAYwAcAAAASAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-29T05:32:09.46Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Worker.cs",
+              "DocumentMoniker": "D:\\Projetos\\RoboDeRecrutamentoMVP\\RecrutamentoRobo.Worker\\Worker.cs",
+              "RelativeDocumentMoniker": "RecrutamentoRobo.Worker\\Worker.cs",
+              "ToolTip": "D:\\Projetos\\RoboDeRecrutamentoMVP\\RecrutamentoRobo.Worker\\Worker.cs",
+              "RelativeToolTip": "RecrutamentoRobo.Worker\\Worker.cs",
+              "ViewState": "AgIAAEIAAAAAAAAAAAAiwFgAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-29T05:07:55.757Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
